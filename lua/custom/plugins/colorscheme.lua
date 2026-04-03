@@ -5,7 +5,9 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require('lume').setup()
+      require('lume').setup {
+        transparent = true,
+      }
       vim.cmd 'colorscheme lume'
     end,
   },
